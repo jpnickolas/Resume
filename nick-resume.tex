@@ -3,27 +3,37 @@
 \setlength{\textheight}{10in}
 \usepackage{geometry}
 \usepackage{paralist}
+\usepackage{float}
+\usepackage{tabularx}
 \geometry{margin=0.5in}
 \pagestyle{empty}
+\DeclareSymbolFont{extraup}{U}{zavm}{m}{n}
+\DeclareMathSymbol{\varheart}{\mathalpha}{extraup}{86}
+\DeclareMathSymbol{\vardiamond}{\mathalpha}{extraup}{87}
+\newcommand{\lineseparator}[1]{\noindent\makebox[\linewidth]{\rule{\textwidth}{#1}}}
+\newcommand*\lineBr[2][c]{\begin{tabular}[#1]{@{}r@{}}#2\end{tabular}}
+\newcommand*\lineBl[2][c]{\begin{tabular}[#1]{@{}l@{}}#2\end{tabular}}
 \linespread{0.2}
 \begin{document}
 \begin{minipage}[t]{0.4\textwidth}
+  \hspace{-6.5mm}
   {\Huge Nickolas J Hilton }
 \end{minipage}
+\hspace{-6.5mm}
 \begin{minipage}[b]{0.6\textwidth}
   \begin{flushright}
-  Seeking full-time employment as a software developer beginning Summer of 2017 
+    {\small Seeking full-time employment as a software developer beginning Summer of 2017 }
   \end{flushright}
 \end{minipage}
-\begin{center}
-  \line(1,0){550}
-\end{center}
+\vspace{1mm}
+\lineseparator{1.5pt}
+\vspace{-3mm}
 \begin{center}
   nhilton777@gmail.com 
   \begin{inparaitem}
-    \item 7 Alexander Road, Londonderry NH 03053 
-    \item 603-247-9124 
-    \item www.nickhilton.net 
+  \item[$\vardiamond$] 7 Alexander Road, Londonderry NH 03053     
+  \item[$\vardiamond$] 603-247-9124 
+  \item[$\vardiamond$] www.nickhilton.net 
   \end{inparaitem}
 \end{center}
 \begin{minipage}[t]{0.5\textwidth}
@@ -32,110 +42,142 @@
 \begin{minipage}[t]{0.5\textwidth}
   {\Large Relevent Classes } 
 \end{minipage}
-\begin{center}
-  \line(1,0){500}
-\end{center}
+\lineseparator{0.5pt}
+\vspace{3mm}
 \begin{minipage}[t]{0.5\textwidth}
+  \vspace{0.5mm}
   \begin{itemize}
-    \item Rochester Institute of Technology 
-    \item BS in Computer Science, December 2016 
-    \item Cumulative GPA: 3.5 
-    \item Computer Science House Member 
+    \item[] Rochester Institute of Technology  \vspace{-1mm}  
+    \item[] BS in Computer Science, December 2016 \vspace{-1mm}  
+    \item[] Cumulative GPA: 3.5 \vspace{-1mm}  
+    \item[] Computer Science House Member \vspace{-1mm}  
   \end{itemize}
 \end{minipage}
 \begin{minipage}[t]{0.5\textwidth}
+  \vspace{0.5mm}
   \begin{itemize}
-    \item Parallel and Distributed Systems 
-    \item Object Oriented Programming 
-    \item Data Structures 
-  \end{itemize}
-\end{minipage}
-{\Large Knowledgable in }\\ 
-\begin{center}
-  \line(1,0){500}
-\end{center}
-\begin{minipage}[t]{0.33\textwidth}
-  \begin {itemize}
-    \item C\# 
-    \item C++/CX 
-    \item Node JS 
-    \item Javascript/JQuery 
+    \item[] Parallel and Distributed Systems \vspace{-1mm}  
+    \item[] Object Oriented Programming \vspace{-1mm}  
+    \item[] Data Structures \vspace{-1mm}  
   \end{itemize}
 \end{minipage}
 \begin{minipage}[t]{0.33\textwidth}
+  {\Large Knowledgable in }\\ 
+\end{minipage}
+\begin{minipage}[t]{0.33\textwidth}
+  {\Large Comfortable With }\\ 
+\end{minipage}
+\begin{minipage}[t]{0.34\textwidth}
+  {\Large Exposed To }\\ 
+\end{minipage}
+\lineseparator{0.5pt}
+\vspace{3mm}
+\begin{minipage}[t]{0.33\textwidth}
+  \vspace{0.5mm}
   \begin {itemize}
-    \item HTML5 
-    \item CSS3 
-    \item Linux
-    \item .NET Framework 
+    \item[$\vardiamond$] C\# 
+    \item[$\vardiamond$] C++/CX 
+    \item[$\vardiamond$] Javascript/JQuery 
+    \item[$\vardiamond$] HTML/CSS 
+  \end{itemize}
+\end{minipage}
+\begin{minipage}[t]{0.33\textwidth}
+  \vspace{0.5mm}
+  \begin {itemize}
+    \item[$\vardiamond$] Node JS 
+    \item[$\vardiamond$] C 
+    \item[$\vardiamond$] Haskell 
+    \item[$\vardiamond$] Linux
   \end{itemize}
 \end{minipage}
 \begin{minipage}[t]{0.34\textwidth}
+  \vspace{0.5mm}
   \begin {itemize}
-    \item Objective C 
-    \item Java 
-    \item Python 
-    \item C 
+    \item[$\vardiamond$] Python 
+    \item[$\vardiamond$] Java 
+    \item[$\vardiamond$] x86 Assembly 
+    \item[$\vardiamond$] Objective C 
   \end{itemize}
 \end{minipage}
 {\Large Personal Projects (github.com/geekster777) } \\ 
-\begin{center}
-  \line(1,0){500}
-\end{center}
+\lineseparator{0.5pt}
+\vspace{1mm}
 \begin{minipage}[t]{0.5\textwidth}
-  {\large Personal Blog } \\
-  Project written with NodeJS, AngularJS, and MongoDB \\
-  Web app pulls articles from a database to present \\
-  Admin login to create articles through Web UI \\
-  {\large 3Depict } \\
-  Web app using JQuery and HTML5 Canvas to draw \\
-  Allows multiple layers for three dimensional effect \\
-  Parallax mode to change view angle with mouse input \\
+  \vspace{0.5mm}
+  \begin{itemize}
+    \item[] {\bf Personal Blog } \\[-0.5mm]   
+    \item[] Project written with NodeJS, AngularJS, and MongoDB \\[-1.5mm]   
+    \item[] Web app pulls articles from a database to present \\[-1.5mm]   
+    \item[] Admin login to create articles through Web UI \\[2mm]
+    \item[] {\bf 3Depict } \\[-0.5mm]   
+    \item[] Web app using JQuery and HTML5 Canvas to draw \\[-1.5mm]   
+    \item[] Allows multiple layers for three dimensional effect \\[-1.5mm]   
+    \item[] Parallax mode to change view angle with mouse input 
+  \end{itemize}
 \end{minipage}
 \begin{minipage}[t]{0.5\textwidth}
-  {\large 3-Dimensional Game Engine } \\
-  Personal learning project coded in C\# \\
-  Created in-game models and lighting  \\
-  Programmed level-making functionality \\
-  {\large 8x8x8 LED Cube } \\
-  A cube of over 500 LED's \\
-  display three dimensional animations. \\
-  Powered by an Arduino. \\
+  \vspace{0.5mm}
+  \begin{itemize}
+    \item[] {\bf 3-Dimensional Game Engine } \\[-0.5mm]   
+    \item[] Personal learning project coded in C\# \\[-1.5mm]   
+    \item[] Created in-game models and lighting  \\[-1.5mm]   
+    \item[] Programmed level-making functionality \\[2mm]
+    \item[] {\bf 8x8x8 LED Cube } \\[-0.5mm]   
+    \item[] A cube of over 500 LED's \\[-1.5mm]   
+    \item[] Displays three dimensional animations \\[-1.5mm]   
+    \item[] Powered by an Arduino. 
+  \end{itemize}
 \end{minipage}
 {\Large Professional Experience } \\
-\begin{center}
-  \line(1,0){500}
-\end{center}
-{\large Microsoft - Co-op (Summer - 2015) } \\
-Used C++/CX to make a Universal Windows App for the Windows Shell team \\
-App used to validate and create JSON consumed by a feature of Windows 10 \\
-Tested cutting edge tools during Windows 10 and Visual Studios 2015 development \\
-{\large Intuit - Co-op (Spring - 2015) } \\
-Created a co-browsing and video chat solution for customer support using Javascript, Websockets, and WebRTC \\
-Presented solution to executives, as well as its current market competitors \\
-Developed a "man in the middle" application meant to push the boundaries of browser security \\
-Application would create a sandboxed iframe for running external HTML and Javascript \\
-Developed a state machine graph creator using AngularJS and NodeJS \\
-Application allows outside companies to create applications to run on TurboTax engine \\
-Focus was on an intuitive user experience and wide functionality \\
-{\large MITRE Corporation - Co-op (Spring \& Summer - 2014) } \\
-Acted as team leader on several projects, responsible for planning, pacing, and packaging \\
-Occupied a leadership role among a group of a dozen interns \\
-Created a secure content delivery system to scale to the corporate level \\
-Developed iOS applications to corporate security standards utilizing Good Dynamics \\
-Created applications for emerging technologies, such as the Pebble Watch (Android/Apple compatible watch) \\
-Introduced interactive capabilities for traditionally simple sensors (iBeacons, QR Codes, Geofencing) \\
-{\large MITRE Corporation - Co-op (Summer - 2013) } \\
-Developed systems in C\# utilizing network capabilities to control multiple networked devices \\
-Prototyped solution for securing digital artifacts in enterprise \\
-Assessed user based technology to obscure the complexity of a collaborative tool being prototyped at Mitre \\
-Organized group of potential end users for usability testing \\
-Assessed and developed the prototype from the perspective of a millennial generation employee \\
-Presented the results to the highest levels of the company \\
-{\large RIT Library - Part Time (Fall - 2013) } \\
-Maintained and developed front end applications for the student body \\
-Developed small scale systems for the student body that utilized PHP, JQuery, and CSS3 \\
-Utilized Javascript and CSS to push restrictions that third party systems imposed on projects \\
+\lineseparator{0.5pt}
+\\[2mm]
+\begin{tabularx}{\textwidth}{ r | X }
+  \vspace{2mm}
+  \lineBr{ {\large {\bf Microsoft }\\ (Summer - 2015)} } &
+  \lineBl{
+    Used C++/CX to make a Universal Windows App for the Windows Shell team \\ 
+    App used to validate and create JSON consumed by a feature of Windows 10 \\
+    Tested cutting edge tools during Windows 10 and Visual Studios 2015 development 
+  } \\
+  \vspace{2mm}
+  \lineBr{ {\large {\bf Intuit }\\ (Spring - 2015)} } &
+  \lineBl{
+    Created a co-browsing and video chat solution for use with customer insights \\
+    Developed co-browsing solution using Javascript, Websockets, and WebRTC \\
+    Presented solution to executives, as well as its current market competitors \\
+    Developed a "man in the middle" application meant to push the boundaries of browser security \\
+    Application would create a sandboxed iframe for running external HTML and Javascript \\
+    Developed a state machine graph creator using AngularJS and NodeJS \\
+    Application allows outside companies to create applications to run on TurboTax engine \\
+    Focus was on an intuitive user experience and wide functionality \\
+  } \\
+  \vspace{2mm}
+  \lineBr{ {\large {\bf MITRE }\\ (Spring - 2014) \\ (Summer - 2014)} } &
+  \lineBl{
+    Acted as team leader on several projects, responsible for planning, pacing, and packaging \\
+    Occupied a leadership role among a group of a dozen interns \\
+    Created a secure content delivery system to scale to the corporate level \\
+    Developed iOS applications to corporate security standards utilizing Good Dynamics \\
+    Created applications for emerging technologies, such as the Pebble Watch (Android/Apple compatible watch) \\
+    Introduced interactive capabilities for traditionally simple sensors (iBeacons, QR Codes, Geofencing) \\
+  } \\
+  \vspace{2mm}
+  \lineBr{ {\large {\bf MITRE } \\ (Summer - 2013)} } &
+  \lineBl{
+    Developed systems in C\# utilizing network capabilities to control multiple networked devices \\
+    Prototyped solution for securing digital artifacts in enterprise \\
+    Assessed user based technology to obscure the complexity of a collaborative tool being prototyped at Mitre \\
+    Organized group of potential end users for usability testing \\
+    Assessed and developed the prototype from the perspective of a millennial generation employee \\
+    Presented the results to the highest levels of the company \\
+  } \\
+  \vspace{2mm}
+  \lineBr{ {\large {\bf RIT } \\ (Fall - 2013)} } &
+  \lineBl{
+    Maintained and developed front end applications for the student body \\
+    Developed small scale systems for the student body that utilized PHP, JQuery, and CSS3 \\
+    Utilized Javascript and CSS to push restrictions that third party systems imposed on projects \\
+  }
+\end{tabularx}
 
 \end{document}
-
